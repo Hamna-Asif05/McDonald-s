@@ -1,0 +1,13 @@
+[
+  { "id": 1, "name": "Big Mac", "category": "beef", "price": 850, "inStock": true },
+  { "id": 2, "name": "Double Cheeseburger", "category": "beef", "price": 790, "inStock": true },
+  { "id": 3, "name": "Spicy McCrispy Deluxe", "category": "crispy", "price": 820, "inStock": true },
+  { "id": 4, "name": "McChicken", "category": "chicken", "price": 650, "inStock": true },
+  { "id": 5, "name": "Omelette Muffin Meal", "category": "breakfast", "price": 620, "inStock": true },
+  { "id": 6, "name": "Chicken Sausage McMuffin", "category": "breakfast", "price": 690, "inStock": true },
+  { "id": 7, "name": "Crispy Wrap with Mayo", "category": "wraps", "price": 610, "inStock": true },
+  { "id": 8, "name": "World Famous Fries (L)", "category": "sides", "price": 390, "inStock": true },
+  { "id": 9, "name": "McFlurry Oreo", "category": "dessert", "price": 430, "inStock": true },
+  { "id": 10, "name": "Mega Family Feast", "category": "meals", "price": 2850, "inStock": true },
+  { "id": 11, "name": "Happy Meal Nuggets Box", "category": "meals", "price": 690, "inStock": true }
+]

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Golden Arch Dining - Fast Food & Delivery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Utilities Header -->
+  <header class="top-nav">
+    <div class="desktop-top-bar">
+      <div class="nav-container top-row">
+        <div class="top-links">
+          <a href="#careers" class="route-link">Careers</a>
+          <a href="#contact" class="route-link">Contact Us</a>
+        </div>
+        <div class="utility-actions">
+          <button class="icon-btn" id="searchTrigger"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+          <button class="icon-btn" id="locateTrigger"><i class="fa-solid fa-location-dot"></i> Locate Me</button>
+          <button class="primary-btn mcdelivery-btn" id="openDeliveryModal">Order on McDelivery</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="nav-container main-row">
+      <div class="nav-left-group">
+        <button class="mobile-hamburger-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="brand-logo">
+          <a href="#home" class="logo-m-yellow route-link" title="McDonald's Home">M</a>
+        </div>
+      </div>
+
+      <nav class="main-menu desktop-menu">
+        <ul class="nav-list">
+          <li class="has-megamenu">
+            <button class="nav-link" id="menuToggle">
+              Our Menu <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </button>
+            <div class="megamenu" id="megaMenu">
+              <div class="megamenu-grid">
+                <div class="menu-col">
+                  <a href="#menu" data-cat="breakfast" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=100&auto=format&fit=crop&q=80" alt="Breakfast">
+                    <span>Breakfast</span>
+                  </a>
+                  <a href="#menu" data-cat="beef" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=100&auto=format&fit=crop&q=80" alt="Beef Burgers">
+                    <span>Beef</span>
+                  </a>
+                  <a href="#menu" data-cat="chicken" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?w=100&auto=format&fit=crop&q=80" alt="Chicken & Fish">
+                    <span>Chicken & Fish</span>
+                  </a>
+                  <a href="#menu" data-cat="crispy" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=100&auto=format&fit=crop&q=80" alt="Crispy Chicken">
+                    <span>Crispy Chicken</span>
+                  </a>
+                </div>
+                <div class="menu-col">
+                  <a href="#menu" data-cat="wraps" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=100&auto=format&fit=crop&q=80" alt="Wraps">
+                    <span>Wraps</span>
+                  </a>
+                  <a href="#family" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=100&auto=format&fit=crop&q=80" alt="Happy Meals">
+                    <span>Happy Meals</span>
+                  </a>
+                  <a href="#menu" data-cat="meals" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=100&auto=format&fit=crop&q=80" alt="Extra Value Meals">
+                    <span>Extra Value Meals</span>
+                  </a>
+                  <a href="#menu" data-cat="sides" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=100&auto=format&fit=crop&q=80" alt="Fries & Sides">
+                    <span>Fries & Sides</span>
+                  </a>
+                </div>
+                <div class="menu-col">
+                  <a href="#menu" data-cat="dessert" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=100&auto=format&fit=crop&q=80" alt="Desserts">
+                    <span>Desserts</span>
+                  </a>
+                  <a href="#menu" data-cat="beverages" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=100&auto=format&fit=crop&q=80" alt="Beverages">
+                    <span>Beverages</span>
+                  </a>
+                  <a href="#menu" data-cat="coffee" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=100&auto=format&fit=crop&q=80" alt="McCafé">
+                    <span>McCafé</span>
+                  </a>
+                  <a href="#menu" data-cat="condiments" class="menu-item route-link">
+                    <img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?w=100&auto=format&fit=crop&q=80" alt="Condiments">
+                    <span>Condiments</span>
+                  </a>
+                </div>
+              </div>
+              <div class="megamenu-footer">
+                <a href="#menu" class="view-menu-btn route-link">View Full Menu</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#about" class="nav-link route-link">About Our Food</a></li>
+          <li><a href="#sourcing" class="nav-link route-link">Food Quality & Sourcing</a></li>
+          <li><a href="#app" class="nav-link route-link">McDonald's App</a></li>
+          <li><a href="#family" class="nav-link route-link">Family</a></li>
+          <li><a href="#partnerships" class="nav-link route-link">Partnerships</a></li>
+          <li><a href="#impact" class="nav-link route-link">Local Impact</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav-actions">
+        <button class="icon-btn mobile-icon-btn" id="mobileSearchTrigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="primary-btn mcdelivery-btn" id="mobileOpenDeliveryModal">Order</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Drawer Navigation -->
+  <div class="mobile-drawer-overlay" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <span class="logo-m-yellow">M</span>
+        <button class="mobile-drawer-close" id="closeDrawerBtn">&times;</button>
+      </div>
+      <div class="mobile-drawer-nav">
+        <button class="drawer-accordion-btn" id="drawerMenuAccordion">
+          <span>Our Menu</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="drawer-submenu" id="drawerSubmenu">
+          <a href="#menu" data-cat="all" class="drawer-sublink route-link">View All Items</a>
+          <a href="#menu" data-cat="breakfast" class="drawer-sublink route-link">Breakfast</a>
+          <a href="#menu" data-cat="beef" class="drawer-sublink route-link">Beef Burgers</a>
+          <a href="#menu" data-cat="chicken" class="drawer-sublink route-link">Chicken & Fish</a>
+          <a href="#menu" data-cat="crispy" class="drawer-sublink route-link">Crispy Chicken</a>
+          <a href="#menu" data-cat="wraps" class="drawer-sublink route-link">Wraps</a>
+          <a href="#menu" data-cat="sides" class="drawer-sublink route-link">Fries & Sides</a>
+          <a href="#menu" data-cat="dessert" class="drawer-sublink route-link">Desserts</a>
+        </div>
+        <a href="#about" class="drawer-link route-link">About Our Food</a>
+        <a href="#sourcing" class="drawer-link route-link">Food Quality & Sourcing</a>
+        <a href="#app" class="drawer-link route-link">McDonald's App</a>
+        <a href="#family" class="drawer-link route-link">Family</a>
+        <a href="#partnerships" class="drawer-link route-link">Partnerships</a>
+        <a href="#impact" class="drawer-link route-link">Local Impact</a>
+        <hr class="drawer-divider">
+        <a href="#careers" class="drawer-link route-link"><i class="fa-solid fa-briefcase"></i> Careers</a>
+        <a href="#contact" class="drawer-link route-link"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+        <button class="drawer-link-btn" id="mobileLocateBtn"><i class="fa-solid fa-location-dot"></i> Locate Store</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Pop-up Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search burgers, beverages, promotions...">
+      <button id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE 1: HOME PAGE -->
+    <div id="page-home" class="page-view active">
+      <section class="hero-section">
+        <div class="hero-curved-wave"></div>
+        <div class="hero-container">
+          <div class="hero-text-card animate-slide-in">
+            <h2>Too Cheesy To Be True!</h2>
+            <p>Dunk into the indulgent goodness of the all-new Cheese Dunk sauce.</p>
+            <button class="primary-btn" onclick="addToTray('Cheese Dunk Burger Meal', 890)">Order Now</button>
+          </div>
+          <div class="hero-image-wrapper animate-float">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&auto=format&fit=crop&q=80" alt="Cheesy Burger Dip" class="hero-burger-img">
+          </div>
+        </div>
+      </section>
+
+      <section class="home-promo-section">
+        <div class="container grid-two">
+          <div class="home-promo-card app-card">
+            <span class="pill-badge">App Exclusive</span>
+            <h3>The App-solute Trio!</h3>
+            <p>Treat yourself to a spicy feast and cold shake at Rs. 995.</p>
+            <button class="primary-btn" onclick="addToTray('The App-solute Trio Deal', 995)">Order Deal</button>
+          </div>
+          <div class="home-promo-card family-card">
+            <span class="pill-badge">Family & Kids</span>
+            <h3>Happy Meal Readers</h3>
+            <p>Spark imagination with exciting books and delicious mini combos.</p>
+            <a href="#family" class="outline-btn route-link">Discover More</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE 2: FULL MENU PAGE -->
+    <div id="page-menu" class="page-view">
+      <div class="container menu-page-layout">
+        <aside class="menu-sidebar">
+          <div class="sidebar-item active" data-category="all">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=80&auto=format&fit=crop&q=80" alt="All">
+            <span>View Full Menu</span>
+          </div>
+          <div class="sidebar-item" data-category="breakfast">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=80&auto=format&fit=crop&q=80" alt="Breakfast">
+            <span>Breakfast</span>
+          </div>
+          <div class="sidebar-item" data-category="beef">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=80&auto=format&fit=crop&q=80" alt="Beef">
+            <span>Beef Burgers</span>
+          </div>
+          <div class="sidebar-item" data-category="chicken">
+            <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?w=80&auto=format&fit=crop&q=80" alt="Chicken">
+            <span>Chicken & Fish</span>
+          </div>
+          <div class="sidebar-item" data-category="crispy">
+            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=80&auto=format&fit=crop&q=80" alt="Crispy">
+            <span>Crispy Chicken</span>
+          </div>
+          <div class="sidebar-item" data-category="wraps">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=80&auto=format&fit=crop&q=80" alt="Wraps">
+            <span>Wraps</span>
+          </div>
+          <div class="sidebar-item" data-category="sides">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=80&auto=format&fit=crop&q=80" alt="Sides">
+            <span>Fries & Sides</span>
+          </div>
+          <div class="sidebar-item" data-category="dessert">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=80&auto=format&fit=crop&q=80" alt="Desserts">
+            <span>Desserts</span>
+          </div>
+        </aside>
+
+        <section class="menu-display-area">
+          <h1 class="page-main-heading" id="menuTitle">Full Menu</h1>
+          <div class="products-grid-catalog" id="menuCatalogGrid"></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- PAGE 3: ABOUT OUR FOOD -->
+    <div id="page-about" class="page-view">
+      <div class="page-hero-banner">
+        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=1600&auto=format&fit=crop&q=80" alt="Fresh Food Quality" class="banner-cover-img">
+      </div>
+      <div class="container page-content-block">
+        <div class="cards-grid-3">
+          <div class="info-card">
+            <div class="card-thumb">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&auto=format&fit=crop&q=80" alt="Halal Beef Patty">
+            </div>
+            <h3 class="card-brand-title">Food Quality</h3>
+            <p>From 100% pure Halal meat to clean kitchen prep, every single bite meets gold standard quality.</p>
+            <button class="primary-btn sm-btn" onclick="handleLearnMore('quality')">Learn More</button>
+          </div>
+          <div class="info-card">
+            <div class="card-thumb">
+              <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&auto=format&fit=crop&q=80" alt="Farm Fresh Ingredients">
+            </div>
+            <h3 class="card-brand-title">Our Ingredients</h3>
+            <p>Hand-picked crisp iceberg lettuce, grade-A farm tomatoes, toasted sesame buns, and pure cheese.</p>
+            <button class="primary-btn sm-btn" onclick="handleLearnMore('ingredients')">Learn More</button>
+          </div>
+          <div class="info-card highlight-box">
+            <div class="card-thumb brand-graphic-bg">
+              <span class="big-mac-badge">Big Mac</span>
+            </div>
+            <h3 class="card-brand-title">Your Right To Know</h3>
+            <p>Transparent nutritional facts, calorie checks, and allergen details published for every item.</p>
+            <button class="primary-btn sm-btn" onclick="handleLearnMore('nutrition')">Learn More</button>
+          </div>
+        </div>
+
+        <div class="story-detail-box">
+          <h2>How We Make Your Food Better Every Day</h2>
+          <div class="story-columns">
+            <div class="story-col">
+              <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&auto=format&fit=crop&q=80" alt="Crispy Fries">
+              <h4>Real Potatoes, Real Crunch</h4>
+              <p>Made exclusively from premium Russet Burbank potatoes, sliced with water knives and cooked in 100% pure vegetable oil.</p>
+            </div>
+            <div class="story-col">
+              <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop&q=80" alt="Chicken Breast Meat">
+              <h4>100% Tender White Meat</h4>
+              <p>Our crispy chicken patties and nuggets use authentic white meat cuts with no fillers or artificial coloring.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 4: FOOD QUALITY & SOURCING -->
+    <div id="page-sourcing" class="page-view">
+      <div class="container text-center pt-40">
+        <h1 class="page-main-heading">Food Quality & Sourcing</h1>
+      </div>
+      <div class="sourcing-trust-hero">
+        <div class="trust-pill-tag">Quality We Trust</div>
+        <div class="trust-container">
+          <div class="trust-banner-badge">Pure Taste Guarantee!</div>
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80" alt="Food Quality Standards" class="trust-food-img">
+        </div>
+      </div>
+      <div class="kitchen-tour-strip">
+        <div class="container text-center">
+          <h3>To book your slot for the Open Door Kitchen Tour, click 'Register Now' button</h3>
+          <button class="primary-btn tour-btn" onclick="handleKitchenTour()">Register Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 5: MCDONALD'S APP -->
+    <div id="page-app" class="page-view">
+      <div class="app-split-banner">
+        <div class="container app-header-grid">
+          <div class="app-banner-text">
+            <h2>So, your cravings get satisfied and your rewards keep stacking!</h2>
+            <div class="store-buttons-row">
+              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="store-btn"><i class="fa-brands fa-apple"></i> App Store</a>
+              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" class="store-btn"><i class="fa-brands fa-google-play"></i> Google Play</a>
+            </div>
+          </div>
+          <div class="app-phone-illustration">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop&q=80" alt="Mobile App Screen" class="phone-mock">
+          </div>
+        </div>
+      </div>
+
+      <div class="container app-secondary-promo">
+        <div class="promo-box-layout">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80" alt="Mobile Exclusive Offers" class="promo-box-img">
+          <div class="promo-box-content">
+            <h2>Download The Mobile App</h2>
+            <p>Earn reward points on every single transaction, redeem free meals, and unlock exclusive contactless drive-thru discounts.</p>
+            <div class="store-buttons-row">
+              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" class="store-btn dark"><i class="fa-brands fa-google-play"></i> Google Play</a>
+              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="store-btn dark"><i class="fa-brands fa-apple"></i> App Store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 6: FAMILY & DEALS -->
+    <div id="page-family" class="page-view">
+      <div class="container page-content-block">
+        <div class="section-header-centered">
+          <h1 class="page-main-heading">Family Feast & Happy Meals</h1>
+          <p class="section-subtitle">Specially curated meal combinations packed with fun, toys, and delicious food for the whole family.</p>
+        </div>
+
+        <div class="family-deals-grid">
+          <div class="family-deal-card">
+            <div class="badge-discount">Family Saver</div>
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&auto=format&fit=crop&q=80" alt="Family Mega Feast">
+            <div class="deal-details">
+              <h4>Mega Family Feast</h4>
+              <p>2 Big Macs, 2 McChicken, 4 Regular Fries, 4 Soft Drinks & 6pc Chicken McNuggets.</p>
+              <div class="deal-price">Rs. 2,850</div>
+              <button class="primary-btn sm-btn" onclick="addToTray('Mega Family Feast', 2850)">Add Deal to Tray</button>
+            </div>
+          </div>
+
+          <div class="family-deal-card">
+            <div class="badge-discount">Kids Favorite</div>
+            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop&q=80" alt="Happy Meal Nuggets Combo">
+            <div class="deal-details">
+              <h4>Happy Meal Nuggets Box</h4>
+              <p>4pc Tender Chicken McNuggets, Small Golden Fries, Apple Juice Box + Collectible Toy.</p>
+              <div class="deal-price">Rs. 690</div>
+              <button class="primary-btn sm-btn" onclick="addToTray('Happy Meal Nuggets Box', 690)">Add Deal to Tray</button>
+            </div>
+          </div>
+
+          <div class="family-deal-card">
+            <div class="badge-discount">Double Joy</div>
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=80" alt="Happy Meal Burger Combo">
+            <div class="deal-details">
+              <h4>Happy Meal Cheeseburger</h4>
+              <p>Pure Beef Cheeseburger, Kid's Crispy Fries, Fresh Drink + Illustrated Story Book.</p>
+              <div class="deal-price">Rs. 720</div>
+              <button class="primary-btn sm-btn" onclick="addToTray('Happy Meal Cheeseburger', 720)">Add Deal to Tray</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="family-double-grid mt-40">
+          <div class="family-banner-card party-bg">
+            <div class="banner-card-content">
+              <h3>Birthday Celebrations</h3>
+              <p>Unforgettable celebrations with party hosts, fun games, customized party boxes, and mascot visits.</p>
+              <button class="primary-btn" onclick="handlePartyBooking()">Book Party Now</button>
+            </div>
+          </div>
+          <div class="family-banner-card readers-bg">
+            <div class="banner-card-content">
+              <h3>The Parents Reading Club</h3>
+              <p>Inspiring creative thinking and curiosity through engaging family reading story sessions.</p>
+              <button class="primary-btn" onclick="handleReadingClub()">Join Reading Club</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 7: PARTNERSHIPS -->
+    <div id="page-partnerships" class="page-view dark-theme-page">
+      <div class="ima-hero-section">
+        <div class="container text-center">
+          <h1 class="ima-title">FASHION COLLECTION 2026</h1>
+          <p class="ima-description">
+            IMA 2026 (Industry Meets Academia) is a creative platform uniting design, industry, and emerging creators. We collaborate with upcoming designers to transform iconic brand aesthetics into runway collections.
+          </p>
+        </div>
+
+        <div class="video-container-wrapper">
+          <div class="video-overlay-tint"></div>
+          <video autoplay loop muted playsinline class="fashion-runway-video">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+          </video>
+          <div class="video-floating-content">
+            <span class="runway-tag">Runway Premiere</span>
+            <h2>Golden Arch x Runway Couture</h2>
+            <p>From Classic Menus to Avant-Garde Streetwear</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container ima-voting-area">
+        <span class="sub-accent">Your Voice Matters</span>
+        <h2>VOTE FOR YOUR FAVORITE DESIGN</h2>
+        <p>Support emerging creators by casting your vote to choose this season's grand winner.</p>
+        
+        <div class="voting-steps-row">
+          <div class="step-cell"><i class="fa-solid fa-thumbs-up"></i> <strong>LIKE</strong> Show Support</div>
+          <div class="step-cell"><i class="fa-solid fa-star"></i> <strong>RATE</strong> Submit Honest Score</div>
+          <div class="step-cell"><i class="fa-solid fa-bullhorn"></i> <strong>BE HEARD</strong> Choose The Future</div>
+        </div>
+
+        <button class="primary-btn vote-btn" id="castVoteBtn" onclick="handleVote()">
+          <i class="fa-solid fa-fingerprint"></i> Cast Your Vote &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- PAGE 8: LOCAL IMPACT -->
+    <div id="page-impact" class="page-view">
+      <div class="container page-content-block text-center">
+        <h1 class="page-main-heading">Local Impact & Sustainability</h1>
+        <p class="section-subtitle">Investing in community relief, environment protection, and continuous workforce development.</p>
+        <div class="cards-grid-3">
+          <div class="info-card">
+            <i class="fa-solid fa-leaf impact-icon"></i>
+            <h3>Zero Waste Packaging</h3>
+            <p>100% paper bags and wrappers crafted from certified sustainably farmed forests.</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-graduation-cap impact-icon"></i>
+            <h3>Student Scholarships</h3>
+            <p>Providing flexible shifts and tuition support scholarships to over 10,000 university students.</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-heart impact-icon"></i>
+            <h3>Emergency Relief</h3>
+            <p>Serving hot meals and community assistance during seasonal emergencies and natural crises.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 9: CAREERS -->
+    <div id="page-careers" class="page-view">
+      <div class="container page-content-block">
+        <div class="section-header-centered">
+          <h1 class="page-main-heading">Join Our Team</h1>
+          <p class="section-subtitle">Build your career with flexible working hours, industry-leading training, and rapid promotion tracks.</p>
+        </div>
+
+        <div class="careers-grid">
+          <div class="career-card">
+            <div class="career-badge">Now Hiring</div>
+            <h3>Restaurant Crew Member</h3>
+            <p class="career-loc"><i class="fa-solid fa-location-dot"></i> Multiple Branches Nationwide</p>
+            <p>Deliver welcoming customer experiences, handle cash registers, and prepare food in accordance with strict safety procedures.</p>
+            <ul class="job-perks">
+              <li>Flexible Shifts (Morning/Evening/Night)</li>
+              <li>Free Meal Allowances</li>
+              <li>Monthly Performance Bonuses</li>
+            </ul>
+            <button class="primary-btn" onclick="openJobModal('Restaurant Crew Member')">Apply Now</button>
+          </div>
+
+          <div class="career-card">
+            <div class="career-badge">Full-Time</div>
+            <h3>Shift Supervisor / Manager Trainee</h3>
+            <p class="career-loc"><i class="fa-solid fa-location-dot"></i> Regional Hubs</p>
+            <p>Supervise restaurant floor operations, track inventory pipelines, motivate crew members, and maintain customer satisfaction.</p>
+            <ul class="job-perks">
+              <li>Comprehensive Leadership Training</li>
+              <li>Health Coverage & Paid Time Off</li>
+              <li>Accelerated Management Track</li>
+            </ul>
+            <button class="primary-btn" onclick="openJobModal('Shift Supervisor')">Apply Now</button>
+          </div>
+        </div>
+
+        <div class="career-application-box" id="jobAppSection">
+          <h3>Quick Candidate Application</h3>
+          <form class="custom-form" id="careerForm">
+            <div class="form-row">
+              <input type="text" id="applicantName" placeholder="Full Name *" required>
+              <input type="email" id="applicantEmail" placeholder="Email Address *" required>
+            </div>
+            <div class="form-row">
+              <input type="tel" id="applicantPhone" placeholder="Mobile Phone (e.g. +92-300-0000000) *" required>
+              <select id="applicantRole" onchange="toggleOtherInput(this, 'otherRoleWrap', 'otherRoleInput')" required>
+                <option value="">Select Desired Position *</option>
+                <option value="Restaurant Crew Member">Restaurant Crew Member</option>
+                <option value="Shift Supervisor">Shift Supervisor</option>
+                <option value="Delivery Dispatcher">Delivery Dispatcher</option>
+                <option value="Other">Other (Custom Department)</option>
+              </select>
+            </div>
+
+            <div id="otherRoleWrap" style="display: none; margin-top: 5px;">
+              <input type="text" id="otherRoleInput" placeholder="Specify your desired job title or department *">
+            </div>
+
+            <textarea id="applicantExperience" rows="3" placeholder="Brief Work Background or Education Details"></textarea>
+            <button type="submit" class="primary-btn">Submit Job Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 10: CONTACT US -->
+    <div id="page-contact" class="page-view">
+      <div class="container page-content-block">
+        <div class="section-header-centered">
+          <h1 class="page-main-heading">Contact Customer Support</h1>
+          <p class="section-subtitle">Have questions or feedback? Our team is available 24/7 to assist you.</p>
+        </div>
+
+        <div class="contact-layout-grid">
+          <div class="contact-info-panel">
+            <h3>Support Headquarters</h3>
+            
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Customer Helpline</strong>
+                <p>+92 (00) 000-0000 / +92 (55) 000-1111</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Support Email</strong>
+                <p>support@mcd-fictional-hub.com</p>
+                <p>inquiries@mcd-fictional-hub.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-building"></i>
+              <div>
+                <strong>Head Office Address</strong>
+                <p>Corporate Plaza, Suite 404, Tech Park Boulevard, Sector G-10, Islamabad, Pakistan</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Operating Hours</strong>
+                <p>Customer Support: 24/7 Mon - Sun</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <h3>Send An Inquiry</h3>
+            <form class="custom-form" id="contactForm">
+              <div class="form-row">
+                <input type="text" id="contactName" placeholder="Your Name *" required>
+                <input type="email" id="contactEmail" placeholder="Your Email Address *" required>
+              </div>
+              <input type="text" id="contactSubject" placeholder="Inquiry Subject *" required>
+              <textarea id="contactMessage" rows="5" placeholder="Write your message or feedback here..." required></textarea>
+              <button type="submit" class="primary-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Real Food Order & Checkout Tray Modal -->
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="custom-modal checkout-modal-card">
+      <button class="modal-close" id="closeCheckout">&times;</button>
+      <h3 class="modal-title" style="color: #27251F;"><i class="fa-solid fa-bag-shopping" style="color: #DA291C;"></i> Your Order Tray</h3>
+      
+      <div class="cart-items-box" id="cartItemsList"></div>
+
+      <div class="cart-total-bar">
+        <span>Total Amount:</span>
+        <strong id="cartTotalDisplay">Rs. 0</strong>
+      </div>
+
+      <form class="custom-form checkout-form" id="checkoutForm">
+        <h4 style="margin-top: 10px; font-size: 15px;">Delivery Details</h4>
+        <input type="text" id="custName" placeholder="Full Name *" required>
+        <input type="tel" id="custPhone" placeholder="Mobile Phone (e.g. 0300-0000000) *" required>
+        <textarea id="custAddress" rows="2" placeholder="Full Delivery Address *" required></textarea>
+        
+        <div class="modal-actions" style="margin-top: 15px;">
+          <button type="button" class="secondary-btn" id="cancelCheckout">Cancel</button>
+          <button type="submit" class="primary-btn" id="placeOrderBtn">Confirm & Place Order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dynamic Action Modal -->
+  <div class="modal-backdrop" id="actionModal">
+    <div class="custom-modal action-modal-card">
+      <button class="modal-close" onclick="closeActionModal()">&times;</button>
+      <div id="actionModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Store Locator Modal -->
+  <div class="modal-backdrop" id="locatorModal">
+    <div class="custom-modal locator-card">
+      <button class="modal-close" id="closeLocator">&times;</button>
+      <h3 class="modal-title"><i class="fa-solid fa-location-dot"></i> Store Locator</h3>
+      <p class="modal-desc">Find your closest drive-thru and dine-in restaurant branch.</p>
+      
+      <div class="locator-search">
+        <input type="text" id="citySearchInput" placeholder="Enter city (e.g. Gujranwala, Lahore, Karachi)...">
+        <button class="primary-btn" id="searchCityBtn">Search</button>
+      </div>
+
+      <button class="gps-btn" id="gpsFindBtn">
+        <i class="fa-solid fa-crosshairs"></i> Detect My Current Location
+      </button>
+
+      <div class="branch-results" id="branchResults"></div>
+    </div>
+  </div>
+
+  <!-- Floating Scroll To Top Button (Mobile & Desktop) -->
+  <button class="floating-scroll-top-btn" id="scrollTopBtn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer with Responsive Accordions -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col accordion-col">
+        <h4 class="footer-accordion-header">
+          <span>Our Company</span>
+          <i class="fa-solid fa-plus mobile-plus-icon"></i>
+        </h4>
+        <div class="footer-col-links">
+          <a href="#about" class="route-link">Our Community</a>
+          <a href="#sourcing" class="route-link">Our Journey</a>
+          <a href="#sourcing" class="route-link">Our History</a>
+          <a href="#impact" class="route-link">Social Impact</a>
+        </div>
+      </div>
+      <div class="footer-col accordion-col">
+        <h4 class="footer-accordion-header">
+          <span>Careers</span>
+          <i class="fa-solid fa-plus mobile-plus-icon"></i>
+        </h4>
+        <div class="footer-col-links">
+          <a href="#careers" class="route-link">Corporate Opportunities</a>
+          <a href="#careers" class="route-link">Restaurant Crew</a>
+        </div>
+      </div>
+      <div class="footer-col accordion-col">
+        <h4 class="footer-accordion-header">
+          <span>Contact Us</span>
+          <i class="fa-solid fa-plus mobile-plus-icon"></i>
+        </h4>
+        <div class="footer-col-links">
+          <a href="#contact" class="route-link">Customer Helpline</a>
+          <a href="#contact" class="route-link">Suggestions & Feedback</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Official Accounts</h4>
+        <div class="social-links-grid">
+          <a href="https://www.facebook.com/McDonaldsPK" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/mcdonaldspakistan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@McDonaldsPakistan" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@mcdonaldspakistan" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+        <div class="app-store-footer-links">
+          <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="store-badge-link"><i class="fa-brands fa-apple"></i> App Store</a>
+          <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" class="store-badge-link"><i class="fa-brands fa-google-play"></i> Google Play</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy;  McDonals's 2026 </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

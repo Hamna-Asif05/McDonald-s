@@ -1,0 +1,14 @@
+[
+  {
+    "ticketId": "TKT-713952",
+    "customer": {
+      "name": "ali",
+      "email": "ali123@gmail.com"
+    },
+    "subject": "food",
+    "message": "hello",
+    "priority": "Normal",
+    "status": "Open / Assigned to Customer Representative",
+    "createdDate": "2026-11-09T05:20:28.444Z"
+  }
+]

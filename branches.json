@@ -1,0 +1,8 @@
+[
+  { "id": "B-101", "city": "gujranwala", "name": "GT Road Branch", "address": "Model Town / GT Road Bypass", "phone": "+92-55-111000", "lat": 32.1877, "lon": 74.1945, "driveThru": true, "hours": "24/7" },
+  { "id": "B-102", "city": "gujranwala", "name": "Master City Express", "address": "Master City Main Commercial", "phone": "+92-55-111001", "lat": 32.1485, "lon": 74.2250, "driveThru": true, "hours": "24/7" },
+  { "id": "B-103", "city": "lahore", "name": "Gulberg Boulevard Hub", "address": "Near Main Boulevard Gulberg III", "phone": "+92-42-111000", "lat": 31.5204, "lon": 74.3587, "driveThru": true, "hours": "24/7" },
+  { "id": "B-104", "city": "lahore", "name": "DHA Phase 5", "address": "Sports Complex Sector", "phone": "+92-42-111002", "lat": 31.4682, "lon": 74.4093, "driveThru": true, "hours": "24/7" },
+  { "id": "B-105", "city": "karachi", "name": "Sea View Restaurant", "address": "Clifton Beach Road", "phone": "+92-21-111000", "lat": 24.8138, "lon": 67.0300, "driveThru": true, "hours": "24/7" },
+  { "id": "B-106", "city": "islamabad", "name": "F-9 Park Drive-Thru", "address": "Fatima Jinnah Park Corridor", "phone": "+92-51-111000", "lat": 33.6989, "lon": 73.0180, "driveThru": true, "hours": "24/7" }
+]

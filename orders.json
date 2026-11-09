@@ -1,0 +1,27 @@
+[
+  {
+    "orderId": "MCD-PK-127646",
+    "customer": {
+      "name": "ali",
+      "phone": "123345566",
+      "address": "grid"
+    },
+    "orderSummary": {
+      "items": [
+        {
+          "name": "Happy Meal Nuggets Box",
+          "price": 690,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 690,
+      "deliveryFee": 150,
+      "salesTax": 35,
+      "grandTotal": 875
+    },
+    "status": "Order Placed & Preparing in Kitchen",
+    "kitchenQueueNumber": 29,
+    "estimatedDeliveryTime": "30 - 40 mins",
+    "timestamp": "2026-11-09T05:25:55.693Z"
+  }
+]
